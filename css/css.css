@@ -333,8 +333,7 @@ a {
 	#logo {
 		text-align: center;
 		width: 100%;
-	}
-	.main-nav-list {
 		flex-direction: column;
 	}
+
 }
