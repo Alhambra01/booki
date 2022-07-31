@@ -331,6 +331,7 @@ a {
 @media screen and (max-device-width: 768px)
 {
 	#logo {
+		text-align: center;
 		width: auto;
 	}
 	.main-nav-list {
