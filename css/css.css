@@ -335,14 +335,14 @@ a {
 
 @media screen and (max-device-width: 768px)
 {
-	.main-nav-list {
-		width: 100%;
-		flex-direction: row
+	.main-nav {
+		flex-direction: column;
 	}
-	#logo {
-		text-align: center;
+	.box {
 		width: 100%;
-	
+	}
+	.filters {
+		flex-wrap: wrap;
 	}
 	
 
