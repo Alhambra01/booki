@@ -330,13 +330,7 @@ a {
 
 @media all and (max-device-width: 768px)
 {
-	#logo {
-		width: auto;
+	.main-nav {
+		flex-direction: column;
 	}
-
-	.main-nav-list {
-	display: inline-flex;
-	flex-direction: row;
-	list-style: none;
-}
 }
