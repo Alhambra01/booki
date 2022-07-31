@@ -328,7 +328,7 @@ a {
 	padding: 1%;
 }
 
-@media all and (max-device-width: 768px)
+@media screen and (max-device-width: 768px)
 {
 	.main-nav-list {
 		flex-direction: column;
