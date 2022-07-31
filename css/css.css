@@ -330,6 +330,9 @@ a {
 
 @media screen and (max-device-width: 768px)
 {
+	#logo {
+		width: auto;
+	}
 	.main-nav-list {
 		flex-direction: column;
 	}
