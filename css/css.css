@@ -21,22 +21,27 @@ a {
 	margin-bottom: 0%;
 	padding: 2%;
 }
+.main-nav  {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+		
+}
+
 .main-nav-list {
+	width: 20%;
 	display: flex;
 	list-style: none;
+	justify-content: space-between;
+	
 }
 .main-nav-list a:hover {
 	text-decoration-line: overline;
 	color: #0065FC;
 	text-decoration-style: solid;
+}
 
-}
-.nav {
- margin: 0 2% 0 2%;
-}
-#logo {
-	margin-right: auto;
-}
+
 .searchbox {
 	font-size: 20px;
 	font-weight:  extra bold;
