@@ -351,6 +351,8 @@ a {
 	.searchbox button {
 		text: hidden;
 	}
+	.searchbox button .fa-solid {
+		display: initial;
 	.box {
 		width: 100%;
 		flex-direction: column;
