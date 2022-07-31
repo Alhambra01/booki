@@ -341,9 +341,25 @@ a {
 	.box {
 		width: 100%;
 	}
-	.filters {
-		flex-wrap: wrap;
+	#logo {
+		width: 200%;
+		text-align: center;
 	}
-	
+	.searchbox {
+		width: 100%;
+	}
+	.searchbox button {
+		text: hidden;
+	}
+	.box {
+		width: 100%;
+		flex-direction: column;
+		flex-wrap: wrap ;
 
+	}
+	.first-section {
+		flex-direction: column;
+			}
+
+	
 }
