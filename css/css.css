@@ -363,6 +363,12 @@ a {
 		flex-direction: row;
 		
 			}
+	.tables {	
+		flex-direction: row;
+		}
+	.cards {
+		width: 100%
+		}
 
 	
 }
