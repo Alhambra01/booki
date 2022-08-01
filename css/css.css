@@ -360,15 +360,20 @@ a {
 
 	}
 	.first-section {
-		flex-direction: row;
-		
+		display: block;	
+		width: 100%;	
 			}
-	.tables {	
-		flex-direction: row;
-		}
-	.cards {
-		width: 100%
-		}
+	.hébergements, .populaires {
+		width: 100%;
+	}
+	.table,.tables {
+		display: block;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	.cards, .card {
+		width: 100%;
+	}
 
 	
 }
