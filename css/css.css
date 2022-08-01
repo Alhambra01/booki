@@ -342,7 +342,7 @@ a {
 		width: 100%;
 	}
 	#logo {
-		width: 200%;
+		width: 100%;
 		text-align: center;
 	}
 	.searchbox {
@@ -360,7 +360,8 @@ a {
 
 	}
 	.first-section {
-		flex-direction: column;
+		flex-direction: row;
+		
 			}
 
 	
