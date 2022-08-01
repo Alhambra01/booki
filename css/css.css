@@ -374,6 +374,15 @@ a {
 	.cards, .card {
 		width: 100%;
 	}
+	.activités {
+	display: block;
+}
+.post, .small, .petit-post {
+	width: 100%;
+}
+.main-footer {
+	display: block;
+}
 
 	
 }
