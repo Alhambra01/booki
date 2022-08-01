@@ -336,10 +336,8 @@ a {
 @media screen and (max-device-width: 450px)
 {
 	.main-nav {
+		width: auto;
 		flex-direction: column;
-	}
-	.box {
-		width: 100%;
 	}
 	#logo {
 		width: 100%;
@@ -351,8 +349,6 @@ a {
 	.searchbox button {
 		text: hidden;
 	}
-	.searchbox button .fa-solid {
-		display: initial;
 	.box {
 		width: 100%;
 		flex-direction: column;
@@ -361,10 +357,11 @@ a {
 	}
 	.first-section {
 		display: block;	
-		width: 100%;	
+		width: 90%;	
 			}
 	.hébergements, .populaires {
 		width: 100%;
+		margin: auto;
 	}
 	.table,.tables {
 		display: block;
@@ -374,7 +371,7 @@ a {
 	.cards, .card {
 		width: 100%;
 	}
-	.activités {
+.activités {
 	display: block;
 }
 .post, .small, .petit-post {
@@ -383,6 +380,6 @@ a {
 .main-footer {
 	display: block;
 }
-
 	
 }
+
