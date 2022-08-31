@@ -2,94 +2,185 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <script src="https://kit.fontawesome.com/44312aba28.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/css.css" media="all">
 
         <title>Booki</title>
     </head>
     <body class="page">
         <header class="main-header">
                 <nav class="main-nav">
-                    <ul class="main-nav-list">
-                        <li id="logo"><a href="#"><img src="Pics/Booki.png" alt="Booki" /></a></li>
-                        <li class="nav"><a href="#">Hébergements</a></li>
-                        <li class="nav"><a href="#">Activités</a></li>
-                    </ul>
+                        <h1><a href="#"><picture>
+                            <source 
+                            srcset="images\logo\Booki.png 191w"
+                            media="(min-width:1000px)">
+                            <source
+                            srcset="images\logo\Booki@3x.png 285w"
+                            media="(min-width:350px)">
+                            <img id="logo" src="images\logo\Booki.png" width="142" height="70" />
+                        </picture></a></h1>
+                        <ul class="main-nav-list">
+                            <li id="hébergblue" class="nav"><a href=".hébergements" > Hébergements</a></li>
+                            <li class="nav"><a href="#">Activités</a></li>
+                        </ul>
                 </nav>
             <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
             <p>En plein centre ville ou en pleine nature</p>
                 <form class="formulaire" method="post" action="traitement.php">
                     <div class="searchbox">
-                        <label for="Search"><i class="fa-solid fa-location-dot"></i></label>
-                        <input type="text" name="Search" id="Search" placeholder="Marseille, France" size="19" maxlength="50" />
-                        <button type="submit" value="Search">Rechercher</button> 
+                        <label for="Search"><i class="fa-solid fa-location-dot"></i></label><input type="text" name="Search" id="Search" placeholder="Marseille, France" size="22" maxlength="50" /><button type="submit" value="Search"><p class="mobile"><i class="fa-solid fa-magnifying-glass "></i></p><p class="desktop" >Rechercher</p></button> 
                 </form>
             </div>
 
             <div class="box">
-                <a class="filters" id="filter">Filtres</a>
-                <div class="filters"><div><i class="fa-solid fa-money-bill-wave "></i></div><div class="text"> Economique</div></div>
-                <a class="filters"><i class="fa-solid fa-child-reaching"></i></i> Familial</a>
-                <a class="filters"><i class="fa-solid fa-heart"></i> Romantique</a>
-                <a class="filters"><i class="fa-solid fa-dog"></i> Animaux autorisés</a>
+                <h3 class="filters" id="filter">Filtres</h3>
+                <span class="ligne">
+                <span class="filters">
+                    <span class="icones"><i class="fa-solid fa-money-bill-wave "></i></span><span> Economique</span></span>
+                <span class="filters">
+                    <span class="icones"><i class="fa-solid fa-child-reaching fa-1x"></i></span><span>Familial</span></span>
+                <span class="filters">
+                    <span class="icones"><i class="fa-solid fa-heart "></i></span><span>Romantique</span></span>
+                <span class="filters">
+                    <span class="icones"><i class="fa-solid fa-dog "></i></span><span>Animaux autorisés</span></span>
+                </span>
             </div>
             <p class="info"><i class="fa-solid fa-info"></i>  Plus de 500 logements disponibles dans notre ville</p>
         </header>
         <section class="first-section">
+
             <article class="hébergements">
                 <h2>Hébergements à Marseille</h2>
                 <article class="table ">
                 <article class="cards">
-                    <div class="card-image"><img src="Pics/AubergeLaCannebière.jpg" alt="Auberge La Cannebière" width="300" height="125"/></div>
+                    <div class="card-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\auberge_la_cannebiere_large.jpg 300w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\auberge_la_cannebiere_medium.jpg "
+                            media="(min-width: 650px)">
+                            <source
+                            srcset="images\hebergements\4_small\auberge_la_cannebiere_small.jpg "
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\auberge_la_cannebiere_large.jpg" alt="Auberge la Cannebière" width="300" height="125" />
+                        </picture>
+                        </div>
                     <div class="cards-body">
                     <h4>Auberge La Cannebière</h4>
                 <p>Nuit à partir de 25€</p>
-                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" id="grey"></i></p>
+                <p><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star"></i></p>
             </article>
             <article class="cards">
-                    <div class="card-image"><img src="Pics/port.jpg" alt="Hôtel du port" width="300" height="125" /></div>
+                    <div class="card-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\hotel_du_port_large.jpg 300w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\hotel_du_port_medium.jpg 150w"
+                            media="(min-width: 650px)">
+                            <source
+                            srcset="images\hebergements\4_small\hotel_du_port_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\hotel_du_port_large.jpg" alt="Hôtel du port" width="300" height="125" />
+                        </picture>
+                        </div>
                     <div class="cards-body">
                         <h4>Hôtel du port</h4>
                         <p>Nuit à partir de 52€</p>
-                        <p class="icons"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="icons"><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i></p>
                     </div>
             </article>
             <article class="cards">
-                    <div class="card-image"><img src="Pics/HôtelLesMouettes.jpg" alt="Hôtel Les Mouettes" width="300" height="125" /></div>
+                    <div class="card-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\hotel_les_mouettes_large.jpg 300w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\hotel_les_mouettes_medium.jpg 150w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\hebergements\4_small\hotel_les_mouettes_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\hotel_les_mouettes_large.jpg" alt="Hôtel les Mouettes" width="300" height="125" />
+                        </picture>
+                        </div>
                     <div class="cards-body">
                     <h4>Hôtel Les Mouettes</h4>
                     <p>Nuit à partir de 76€</p>
-                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" id="gray"></i></p>
+                    <p><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star"></i></p>
                 </div>
             </article>
             </article>
             <article class="table">
                 <article class="cards">
-                <div class="card-image"><img src="Pics/Hôteldelamer.jpg" alt="Hôtel de la mer" width="300" height="125" /></div>
+                <div class="card-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\hotel_de_la_mer_large.jpg 150w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\hotel_de_la_mer_medium.jpg 150w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\hebergements\4_small\hotel_de_la_mer_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\hotel_de_la_mer_large.jpg"alt="Hôtel de la mer" width="150" height="125" />
+                        </picture>
+                        </div>
                 <div class="cards-body">
                 <h4>Hôtel de la mer</h4>
                 <p>Nuit à partir de 46€</p>
-                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" id="grise"></i><i id="gris"class="fa-solid fa-star"></i></p>
+                <p><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
             </div>
             </article>
             <article class="cards">
-                <div class="card-image"><img src="Pics/nicate.jpg" alt="Auberge Le Panier" width="300" height="125" /></div>
+                <div class="card-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\auberge_le_panier_large.jpg 300w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\auberge_le_panier_medium.jpg 150w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\hebergements\4_small\auberge_le_panier_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\auberge_le_panier_large.jpg" alt="Auberge Le Panier" width="300" height="125" />
+                        </picture>
+                        </div>
                 <div class="cards-body">
                 <h4>Auberge Le Panier</h4>
                 <p>Nuit à partir de 23€</p>
-                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i id="lightgrey"class="fa-solid fa-star"></i></p>
+                <p><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star"></i></p>
             </div>
             </article>
             <article class="cards">
-                <div class="card-image"><img src="Pics/HôtelchezAmina.jpg" alt="Hôtel chez Amina" width="300" height="125"/></div>
-                <div class="cards-body">
+                <div class="card-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\hotel_chez_amina_large.jpg 300w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\hotel_chez_amina_medium.jpg 150w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\hebergements\4_small\hotel_chez_amina_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\hotel_chez_amina_large.jpg" alt="Hôtel chez Amina" width="300" height="125" />
+                        </picture>
+                        </div>
+                        <div class="cards-body">
                 <h4>Hôtel chez Amina</h4>
                 <p>Nuit à partir de 96€</p>
-                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                <p><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i></p>
             </div>
             </article>
-                
             </article>
             <a href="#">
             <h3>Afficher plus</h3>
@@ -99,27 +190,66 @@
 
             <h2>Les plus populaires <i id="black" class="fa-solid fa-star"></i> </h2>
             <article class="card">
-                        <div class="image"><img src="Pics/HôtelLeSoleildumatin.jpg" alt="Hôtel Le Soleil du matin" width="175" height="150" /></div>
+                        <div class="cards-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\hotel_le_soleil_du_matin_large.jpg"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\hotel_le_soleil_du_matin_medium.jpg 150w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\hebergements\4_small\hotel_le_soleil_du_matin_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\hotel_le_soleil_du_matin_large.jpg" alt="Hôtel Le Soleil du matin" width="150" height="150" />
+                        </picture>
+                        </div>
                         <div class="cards-body">
                             <h4>Hôtel Le Soleil du matin</h4>
                             <p>Nuit à partir de 128€</p>
-                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p class="icone"><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i></p>
                         </div>
             </article>
             <article class="card">
-                <div class="image"><img src="Pics/Aucoeurdel'eauchambresd'hôtes.jpg" alt="Au coeur de l'eau chambres d'hôtes" width="175" height="150"/></div>
+                <div class="cards-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\au_coeur_de_leau_chambre_dhotes_large.jpg 300w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\au_coeur_de_leau_chambre_dhotes_medium.jpg 150w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\hebergements\4_small\au_coeur_de_leau_chambre_dhotes_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\au_coeur_de_leau_chambre_dhotes_large.jpg" alt="Au coeur de l'eau chambre d'hôtes" width="150" height="150" />
+                        </picture>
+                        </div>
                 <div class="cards-body">
                         <h4>Au coeur de l'eau</br>chambre d'hôtes</h4>
-                            <p>Nuit à partir de 71€</p>
-                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" id="lightgray"></i></p>
+                        <p id="br">Nuit à partir de 71€</p>
+                        <p class="icone"><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star"></i></p>
                 </div>
             </article>
             <article class="card">
-                        <div class="image"><img src="Pics/HôtelToutBleuetBlanc.jpg" alt="Hôtel Tout Bleu et Blanc" width="175" height="150"/></div>
+                        <div class="cards-image">
+                        <picture>
+                            <source 
+                            srcset="images\hebergements\2_large\hotel_tout_bleu_et_blanc_large.jpg 300w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\hebergements\3_medium\hotel_tout_bleu_et_blanc_medium.jpg 150w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\hebergements\4_small\hotel_tout_bleu_et_blanc_small.jpg 300w"
+                            media="(min-width: 350px)">
+                            <img src="images\hebergements\2_large\hotel_tout_bleu_et_blanc_large.jpg" alt="Hôtel Tout Bleu et Blanc" width="150" height="150" />
+                        </picture>
+                        </div>
                         <div class="cards-body">
                             <h4>Hôtel Tout Bleu et Blanc</h4>
                             <p>Nuit à partir de 68€</p>
-                            <p class="bottom-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" id="greyy"></i></p>
+                            <p class="icone"><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star checked"></i><i class="fa-solid fa-star"></i></p>
                         </div>
             </article> 
         </aside>
@@ -128,31 +258,83 @@
         <h2>Activités à Marseille</h2>
         <div class="activités">
             <div class="post">
-                <div class="card-img"><img src="Pics/VieuxPort.jpg" alt="Vieux Port" width="350" height="425"></div>
+                <div class="card-img">
+                    <picture>
+                            <source 
+                            srcset="images\activites\2_large\vieux-port-large.jpg 330w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\activites\3_medium\vieux-port-medium.jpg 175w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\activites\4_small\vieux-port-small.jpg 330w"
+                            media="(min-width: 350px)">
+                            <img src="images\activites\2_large\vieux-port-large.jpg" alt="Vieux Port" width="300" heigh="375" />
+                        </picture>
+                    </div>
                 <div class="card-bod">
                     <h3>Vieux Port</h3>
                 </div>
             </div>
         <div class="small">
             <div class="petit-post">
-                <div class="cards-img" id="fort"><img src="Pics/FortdePomègues.jpg" alt="Fort de Pomègues" width="330" height="185"></div>
+                <div class="cards-img" id="fort">
+                    <picture>
+                            <source 
+                            srcset="images\activites\2_large\fort-de-pomegues-large.jpg 330w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\activites\3_medium\fort-de-pomegues-medium.jpg 165w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\activites\4_small\fort-de-pomegues-small.jpg 330w"
+                            media="(min-width: 350px)">
+                            <img src="images\activites\2_large\fort-de-pomegues-large.jpg" alt="Fort de Pomègues" width="330" height="185" />
+                        </picture>
+                   </div>
                 <div class="card-bod">
                     <h3>Fort de Pomègues</h3>
                 </div>
             </div>
             <div class="petit-post">
-                <div class="imagen"><img src="Pics/îlesduFrioul.jpg" alt="Îles des Frioul" width="330" height="125"></div>
+                <div class="imagen">
+                    <picture>
+                            <source 
+                            srcset="images\activites\2_large\iles-du-frioul-large.jpg 350w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\activites\3_medium\iles-du-frioul-medium.jpg 175w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\activites\4_small\iles-du-frioul-small.jpg 350w"
+                            media="(min-width: 400px)">
+                            <img src="images\activites\4_small\iles-du-frioul-small.jpg" alt="ils du frioul" width="350" heigh="150" />
+                        </picture>
+                    </div>
                 <div class="card-bod">
                     <h3>Îles du Frioul</h3>
                 </div>
             </div>
         </div>
         <div class="post">
-            <div class="card-img"><img src="Pics/ParcNationaldesCalanques.jpg" alt="Parc National des Calanques" width="330" height="425"></div>
-            <div class="card-bod">
-                <h3>Parc National des Calanques</h3>
+                <div class="card-img">
+                    <picture>
+                            <source 
+                            srcset="images\activites\2_large\parc-national-des-calanques-large.jpg 330w"
+                            media="(min-width: 1000px)">
+                            <source
+                            srcset="images\activites\3_medium\vieux-port-medium.jpg 175w"
+                            media="(min-width: 750px)">
+                            <source
+                            srcset="images\activites\4_small\vieux-port-small.jpg 330w"
+                            media="(min-width: 350px)">
+                            <img src="images\activites\2_large\parc-national-des-calanques-large.jpg" alt="Vieux Port" width="300" heigh="375" />
+                        </picture>
+                    </div>
+                <div class="card-bod">
+                    <h3>Parc National des Calanques</h3>
+                </div>
             </div>
-        </div>
         <div class="small">
             <div class="petit-post">
                 <img src="Pics/Notre-Dame-de-la-Garde.jpg" alt="Notre-Dame-de-la-Garde" width="330" height="150">
@@ -171,7 +353,8 @@
     </div>
 </section>
         <footer class="main-footer">
-            <ul>
+            <section class="list">            
+                <ul>
                 <h3>A propos</h3>
                 <li>Fonctionnement du site</li>
                 <li>Conditins générales de vente</li>
@@ -187,6 +370,8 @@
                 <li>Centre d'aide</li>
                 <li>Nous contacter</li>
             </ul>
+        </section>
+
         </footer>
     </body>
 </html>
