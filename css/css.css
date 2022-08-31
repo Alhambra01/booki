@@ -1,15 +1,17 @@
 * {
   font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-body, html { 
+body, html {
+	overflow-x: hidden;
 	width: 100%;
- height: 100%;
- padding: 0;
- margin: 0;
- }
+}
 
 a { 
 	text-decoration: none;
@@ -17,11 +19,16 @@ a {
 }
 
 .main-header {
-	margin: 2%;
-	margin-bottom: 0%;
-	padding: 2%;
+	margin: 3%;
+	margin-top: 0%;
 }
+.main-header h2 {
+	margin-bottom: 1%;
+}
+
 .main-nav  {
+	margin-top: 0%;
+	width: 97%;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
@@ -35,27 +42,33 @@ a {
 	justify-content: space-between;
 	
 }
-.main-nav-list a:hover {
-	text-decoration-line: overline;
-	color: #0065FC;
-	text-decoration-style: solid;
+.nav { 
+	margin-top: 0;
+	padding-top: 15%;
 }
-
+#hébergblue {
+	border-top: #0065FC solid 2px;
+}
+#hébergblue a {
+	color: #0065FC;
+}
 
 .searchbox {
-	font-size: 20px;
+	font-size: large;
 	font-weight:  extra bold;
-	margin: 0;
-	margin-bottom: 1%;
+	margin-top: 2%;
+	margin-bottom: 0;
+	padding: auto;
 	
 	
 }
+
 .searchbox label, input, button {
 	padding: 1%;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 1%;
-	border: 2px #F2F2F2;
+	
 }
 .searchbox label {
 	background-color: #F2F2F2;
@@ -63,12 +76,15 @@ a {
 	border-radius: 15px 0 0 15px;
 	padding-right: 1.2%;
 	padding-left: 1.2%;
+	border-top: #F2F2F2 1px solid;
+	border-bottom: #F2F2F2 1px solid;
 }
 .searchbox input {
 	border: black;
-	color: blue;
+	color: black;
 	font-weight: 600;
-	border: none;
+	border-top: #F2F2F2 1.5px solid;
+	border-bottom: #F2F2F2 1.5px solid;
 	padding-right: 0;
 	margin-right: 0;
 }
@@ -77,51 +93,58 @@ a {
 	color: white;
 	border: none;
 	border-radius: 0 15px 15px 0;
-	padding: 1%;
+	padding: auto;
+	border-top: #0065FC 1px solid;
+	border-bottom: #0065FC 1px solid;
+}
+.mobile {
+	display: none;
 }
 .box {
-	width: 70%;
+	display: flex;
+	align-items: baseline;
+
+}
+.ligne {
+	width: 65%;
 	margin: 0%;
 	padding: 0%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	font-weight: 700;
+	font-size: 115%;
 	display: flex;
 	justify-content: space-between;
 	justify-self: flex-start;
+	align-items: baseline;
 }
+
 .filters .fa-solid {
-	position: absolute;
-	font-size: 150%;
+	font-size: 125%;
 	color: #0065FC;
-	padding: 15px;
 	background-color: #DEEBFF;
 	border-radius: 40px;
-	left: -7%;
-	top: -7%;
+	padding: 65%;	
 }
-#familial {
-	padding-left: 18.5px;
-	padding-right: 18.5px;
-}
+
 .filters {
-	position: relative;
+	padding: auto;
 	display: flex;
-	justify-content: space-evenly;
-	padding: 1.5% 1.5% 1.5% 6%;
+	column-gap: 35%;
 	border: 3px solid lightgrey;
 	border-radius: 40px;
-	margin-bottom: 2%;
+	padding-right: 7%;
+	align-items: baseline;
+	white-space: nowrap;
+	overflow: visible;
 }
+
 #filter {
 	border: none;
-	margin-left: 0%;
-	margin-right: 0%;
-	padding-left: 0%;
-	padding-right: 0%;
-	align-self: flex-start;
+	margin-right: 2%;
+	padding: 0;
 }
-.fa-solid {
-	font-size: 80%;
-}
+
 .info .fa-solid {
 	font-size: 75%;
 	color: #0065FC;
@@ -130,39 +153,54 @@ a {
 	border-radius: 100px;
 }
 .first-section {
-	margin-left: 4%;
-	margin-right: 2%;
-	margin-top: 0%;
+	margin: 3%;
 	width: 100%;
 	max-width: 100%;
-	display: inline-grid;
-	grid-template-columns: 60% 30%;
-	grid-column-gap: 3%;
+	display: flex;
+
 }
+
 .hébergements, .populaires {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	padding: 4%;
+	padding: 2%;
 }
-.populaires h2{
-	padding-top: 5%;
-	padding-bottom: 2%;
-	padding-left: 5%;
+.hébergements {
+	width: 60%;
+	}
+
+.populaires {
+	width: 30%;
+	margin: 0 5% 0 3%;
+	padding: 0%;
+}
+.populaires h2 {
+	padding-top: 7%;
+	padding-bottom: 1%;
+	padding-left: 6%;
 }
 .table, .tables {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	margin-bottom: 3%;
-	
+	margin-top: 2%;
+	margin-bottom: 2.5%;
+	padding-left: 0;
+	margin-left: 0;	
 }
-.card .fa-solid, .cards .fa-solid{
+
+.fa-star {
+	font-size: 80%;
+	color: lightgrey;
+}
+.checked {
 	color: #0065FC;
 }
 .cards {
-	position: relative;
   width: 30%; /*1*/
   margin: 1%; /*2*/
+  margin-left: 0;
+  margin-right: 2%;
   background-color: white; /*3*/
   box-shadow: 0px 5px 20px #999; /*4*/
   border-radius: 20px;
@@ -172,33 +210,28 @@ a {
   color: #333; 
   text-decoration: none;
 }
-.cards:hover .card-image img { /*6*/
-  width: 160%;
+
+.card {
+	width: 95%;
+}
+.card-image {
+	height: 60%;
 }
 
-.card-image { 
-  width: 100%;
-  position: relative;/*2*/
-  overflow: hidden;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-
-}
 
 .card-image img {
-  width: 100%;/*4*/
-    /*5 - Méthode de centrage en fonction de la taille de l'image */
-  transition-property: filter width; 
-  transition-duration: .3s;
-  transition-timing-function: ease;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding: 0.5%;
   margin: 0%;
 }
 
 .cards-body {
 	padding: 0.5%;
+	padding-bottom: 0%;
 	margin: 0.5%;
 }
 .populaires .cards-body {
@@ -207,17 +240,19 @@ a {
 #br {
 	white-space: nowrap;
 }
-.cards-body h4, .cards-body p {
+.cards-body p {
 	padding: 0.5%;
+	margin: 0.5%;
+}
+.cards-body h4 {
+	padding-top: 3%;
 	margin: 0.5%;
 }
 
 .side {
 	justify-content: space-between;
 }
-#grey, #gray, #gris, #grise, #lightgrey, #lightgray, #greyy {
-	color: lightgrey;
-}
+
 .icone {
 	position: relative;
 	top: 40%;
@@ -227,6 +262,7 @@ a {
 	font-size: 100%;
 	position: relative;
 	left: 27%;
+	color: black;
 }
 #black {
 	align-self: flex-end;
@@ -252,9 +288,15 @@ a {
 	border-bottom-left-radius: 20PX;
 	overflow: hidden;
 }
+.cards-image { 
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 
+}
 .populaires img {
-
+	 border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 	transition-property: filter width; 
   transition-duration: .3s;
   transition-timing-function: ease;
@@ -269,10 +311,13 @@ a {
 }
 
 .second-section {
-	margin-left: 4%;
-	margin-right: 3%;
+	margin-left: 3%;
+	margin-right: 4%;
 	margin-top: 3%;
 	margin-bottom: 3%;
+}
+.second-section h2 {
+	padding-bottom: 1%;
 }
 
 .activités {
@@ -307,69 +352,125 @@ a {
 
 
 .post img,.petit-post img{
+	width: 100%;
 	border-top-left-radius: 20px ;
 	border-top-right-radius: 20px;	
 }
 
 .activités h3 {
 	margin-left: 5%;
+	padding: 5%;
 }
 
 
 .main-footer {
 	width: 100%;
 	background-color: #F2F2F2;
-	display: inline-grid;
-	grid-template-columns: 33% 33% 33%;
+	
+}
+.list {
+	margin-left: 3%;
+	display:flex;
+	width: 73%;
 	padding: 1%;
+	justify-content: space-between;
+	text-align: left;
+}
+.list h3 {
+	margin-bottom: 3%;
 }
 
 .main-footer ul {
 	list-style: none;
-
+	padding: 3%;
+	justify-content: space-between;
 }
 
-.main-footer li {
-	padding: 1%;
-}
 
-@media screen and (max-device-width: 450px)
-{
+@media all and (max-device-width: 450px) {
+	*{
+		margin: ;
+	}
+
 	.main-nav {
+		margin: 0;
+		padding: 0;
 		width: auto;
 		flex-direction: column;
 	}
-	#logo {
+	.main-nav-list{
+		
+		padding: 0;
 		width: 100%;
+		justify-content: space-between;
+		font-size: smaller ;
+	}
+	.nav {
+		
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	#logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
+		width: 50%;
 	}
 	.searchbox {
 		width: 100%;
 	}
-	.searchbox button {
-		text: hidden;
+	.mobile {
+		display: contents;
+	}
+	.desktop {
+		display: none;
 	}
 	.box {
-		width: 100%;
-		flex-direction: column;
-		flex-wrap: wrap ;
-
+		display: block;
+			}
+	
+	.ligne {
+		width: 90%;
+		flex-wrap: wrap;
+		padding: 2%;
+	}
+	.filters {
+		padding-right: 12%;
+		column-gap: 20%;
+	}
+	.filters .fa-solid {
+		padding: 40%;
 	}
 	.first-section {
-		display: block;	
-		width: 90%;	
-			}
+		margin-left: 0;
+		margin-right: 0;
+		display: flex;	
+		flex-direction: column-reverse;
+				}
+
 	.hébergements, .populaires {
 		width: 100%;
-		margin: auto;
+		margin-left: 0;
+		margin-right: 0;
+		padding: auto;
+	}
+	.hébergements {
+		background-color: white;
+		padding: 2%;
+		margin: 2%;
 	}
 	.table,.tables {
-		display: block;
-		width: 100%;
-		justify-content: space-evenly;
+		display: flex;
+		flex-direction: column;
+		
+		justify-content: space-around;
+		align-self: center;
+		
 	}
-	.cards, .card {
-		width: 100%;
+	.cards {
+		width: 90%;
 	}
 .activités {
 	display: block;
@@ -377,9 +478,13 @@ a {
 .post, .small, .petit-post {
 	width: 100%;
 }
-.main-footer {
+.list {
+	
 	display: block;
+	margin-left: 0;
 }
 	
 }
+
+
 
