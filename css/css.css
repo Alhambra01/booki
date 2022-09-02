@@ -52,6 +52,9 @@ a {
 #hébergblue a {
 	color: #0065FC;
 }
+hr {
+	display: none;
+}
 
 .searchbox {
 	font-size: large;
@@ -180,9 +183,10 @@ a {
 	padding-left: 6%;
 }
 .table, .tables {
+	justify-content: center;
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-left: 0;
@@ -202,7 +206,7 @@ a {
   margin-left: 0;
   margin-right: 2%;
   background-color: white; /*3*/
-  box-shadow: 0px 5px 20px #999; /*4*/
+  box-shadow: 5px 15px 15px #F2F2F2; /*4*/
   border-radius: 20px;
   padding: 0.5%;
 }
@@ -366,30 +370,38 @@ a {
 .main-footer {
 	width: 100%;
 	background-color: #F2F2F2;
+	padding: 2%;
 	
 }
 .list {
 	margin-left: 3%;
 	display:flex;
-	width: 73%;
-	padding: 1%;
+	width: 72%;
+	padding: %;
 	justify-content: space-between;
 	text-align: left;
+	white-space: nowrap;
 }
-.list h3 {
-	margin-bottom: 3%;
-}
-
 .main-footer ul {
 	list-style: none;
-	padding: 3%;
 	justify-content: space-between;
 }
+.main-footer li, .main-footer h3{
+	padding: 3%;
+}
+
 
 
 @media all and (max-device-width: 450px) {
 	*{
-		margin: ;
+		margin: 0;
+	}
+	.main-header {
+		margin: 0;
+		font-size: 105%;
+	}
+	.main-header {
+		margin: auto;
 	}
 
 	.main-nav {
@@ -399,27 +411,67 @@ a {
 		flex-direction: column;
 	}
 	.main-nav-list{
-		
+		margin: 0% 2% 10% 0%;
 		padding: 0;
 		width: 100%;
-		justify-content: space-between;
-		font-size: smaller ;
+		justify-content: center;
+		font-size: x-large;
+
 	}
 	.nav {
-		
+		width: 50%;
+		padding: 7%;
+		margin: 0%;
+		border-bottom: 5px solid #F2F2F2;		
+		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 		
 	}
 	#logo {
 		display: block;
+		margin-top: 10%;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-		width: 50%;
+		width: 33%;
+	}
+	
+	
+	#hébergblue {
+		border-top: hidden;
+		border-bottom: 5px solid #0065FC;
+		margin-right: 0;
+
+	}
+	#hébergris {
+		margin-left: 0;
+	}
+	.little-header {
+		padding-right: 0;
+		margin-left: 7%;
+		margin-right: 4%;
+	}
+	.little-header h2 {
+		margin-bottom: 5%;
 	}
 	.searchbox {
 		width: 100%;
+			}
+	.searchbox label, input, button {
+		padding: 4%;
+		margin-top: 7%;
+		margin-bottom: 7%;
+
+	}
+	.searchbox input {
+		padding-right: 10%;
+	}
+	.searchbox button {
+		border-radius: 15px;
+	}
+	.searchbox label {
+		padding-right: 5%;
 	}
 	.mobile {
 		display: contents;
@@ -429,21 +481,26 @@ a {
 	}
 	.box {
 		display: block;
+
 			}
 	
 	.ligne {
 		width: 90%;
+		margin-top: 5%;
+		margin-bottom: 7%;
 		flex-wrap: wrap;
-		padding: 2%;
+
 	}
 	.filters {
 		padding-right: 12%;
 		column-gap: 20%;
+		margin-bottom: 3%;
 	}
 	.filters .fa-solid {
 		padding: 40%;
 	}
 	.first-section {
+		margin-top: 7%;
 		margin-left: 0;
 		margin-right: 0;
 		display: flex;	
@@ -469,21 +526,41 @@ a {
 		align-self: center;
 		
 	}
+	.hébergements h3 {
+		margin-bottom: 7%;
+	}
 	.cards {
 		width: 90%;
+		margin-top: 1.5%;
+		margin-bottom: 1.5%;
 	}
 .activités {
-	display: block;
+	display: inline-block;
 }
-.post, .small, .petit-post {
+.small {
 	width: 100%;
 }
+.post, .petit-post {
+	margin-bottom: 10%;
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 20px;
+  padding: 0.5%;
+	width: 90%;
+}
 .list {
-	
+	padding: 3%;
+	padding-bottom: 7%;
 	display: block;
 	margin-left: 0;
 }
-	
+.list li, {
+	padding-bottom: 7%;
+}
+.list h3 {
+	padding-top: 7%;
+padding-bottom: 7%;
+}	
 }
 
 
