@@ -266,6 +266,9 @@ border-top-right-radius: 1.2vw;
 .populaires {
 	width: 30vw;
 	margin-left: 3vw;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2vw;
 }
 .populaires .cards-body {
 	padding: 1vw;
@@ -504,7 +507,7 @@ border-top-right-radius: 1.2vw;
 		padding-left: 4vw;
 		padding-right: 4vw;
 	}
-	.table, .tables, .pop {
+	.table, .pop {
 		width: 80vw;
 		
 	}
@@ -803,12 +806,14 @@ border-top-right-radius: 1.2vw;
 	.hébergements {
 		background-color: white;
 		
+		
 	}
-	.table,.tables {
+	.table {
+		width: 90vw;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		flex-direction: column;	
 		align-self: center;
+		
 		
 	}
 	.hébergements h2 {
@@ -841,6 +846,9 @@ border-top-right-radius: 1.2vw;
 	.cards-body {
 		padding-left: 4vw;
 
+	}
+	.fa-star {
+		font-size: 4vw;
 	}
 	.first-section h4, .first-section p {
 		margin-bottom: 1vw;
@@ -903,7 +911,6 @@ border-top-right-radius: 1.2vw;
 	
 	
 	.post {
-
 		width: 90vw;
 		height: 55vw;
 		box-shadow: 0px 2px 10px #999; /*4*/
@@ -911,9 +918,10 @@ border-top-right-radius: 1.2vw;
 		
 		margin-bottom: 7vw;
 	}
-	.post .card-img, .post img {
+	.post .card-img, .post .card-img img {
 		width: 90vw;
 		height: 40vw ;
+		
 	}
 	
 	.card-bod {
@@ -939,4 +947,5 @@ border-top-right-radius: 1.2vw;
 
 
 }
+
 
