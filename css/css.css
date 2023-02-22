@@ -861,6 +861,7 @@ border-top-right-radius: 1.2vw;
 	}
 	.populaires h2 .fa-solid {
 		left: 25vw;
+		font-size: 6vw;
 	}
 	.populaires .card {
 		width: 90vw;
