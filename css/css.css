@@ -58,8 +58,10 @@ h2 {
 }
 .nav:hover {
 	padding-top: 2.75vw;
-	border-top: #0065FC solid 0.25vw;
-	color: #0065FC;	
+	border-top: #0065FC solid 0.25vw;		
+}
+.nav:hover a {
+	color: #0065FC;
 }
 hr {
 	display: none;
@@ -102,17 +104,20 @@ hr {
 .searchbox button {
 	padding: 1.3vw;
 	padding-top: 1.2vw;
-	font-weight: 600;
+	
 	background-color: #0065FC;
-	color: white;
+	
 	border: none;
 	border-radius: 0 1vw 1vw 0;
+	font-size: 1.3vw;
 	
 }
-.desktop {
-	font-size: 1.3vw;
+.searchbox button a {
+	color: white;
+	font-weight: 600;
 }
-.mobile {
+
+.searchbox button .fa-solid {
 	display: none;
 }
 .box {
@@ -662,14 +667,13 @@ border-top-right-radius: 1.2vw;
 		margin-right: auto;
 		
 	}
-	#hébergblue {
-		border-top: hidden;
+	.nav:hover {
 		border-bottom: 1vw solid #0065FC;
-		margin-right: 0;
+		border-top: hidden;
 		padding-top: 7vw;
-
 	}
-	#hébergblue a {
+
+	.nav:hover a {
 		color: #0065FC;
 	}
 	#hébergris {
@@ -682,8 +686,7 @@ border-top-right-radius: 1.2vw;
 	}
 	
 	.formulaire {
-		width: 90vw;
-		max-width: 90vw;
+		
 		margin-top: 5vw;
 		margin-bottom: 3vw;
 		margin-right: 0;
@@ -694,6 +697,7 @@ border-top-right-radius: 1.2vw;
 			}
 
 	.searchbox input {
+		width: 63vw;
 		font-size: 5vw;
 		padding-bottom: 3.6vw;
 		padding-top: 3.3vw;
@@ -705,7 +709,7 @@ border-top-right-radius: 1.2vw;
 	.searchbox button {
 		
 		border-radius: 0 4vw 4vw 0;
-		padding: 4vw;
+		padding: 4.2vw;
 		padding-left: 4.5vw;
 		padding-right: 4.5vw;
 		
@@ -720,16 +724,23 @@ border-top-right-radius: 1.2vw;
 	.fa-location-dot {
 		font-size: 5vw;
 	}
-	.mobile {
-		display: contents;
-	}
-	.desktop {
+	.searchbox button a{
 		display: none;
+	}
+	.searchbox button .fa-solid{
+		display: contents;
+		color: white;
+	}
+	.info {
+		margin-left: 5vw;
+		margin-right: 5vw;
 	}
 	.box {
 		display: block;
+		margin-left: 5vw;
+		margin-right: 5vw;
 
-			}
+	}
 	
 	.ligne {
 		display: flex;
@@ -949,6 +960,7 @@ border-top-right-radius: 1.2vw;
 
 
 }
+
 
 
 
