@@ -109,7 +109,7 @@ h2 {
 	font-size: 1.3vw;
 	
 }
-.searchbox button b {
+.searchbox button strong {
 	color: white;
 	font-weight: 600;
 }
@@ -721,7 +721,7 @@ border-top-right-radius: 1.2vw;
 	.fa-location-dot {
 		font-size: 5vw;
 	}
-	.searchbox button b{
+	.searchbox button strong{
 		display: none;
 	}
 	.searchbox button .fa-solid{
