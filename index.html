@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <script src="https://kit.fontawesome.com/44312aba28.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/css.css" media="all">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="https://kit.fontawesome.com/44312aba28.js" crossorigin="anonymous"></script><link rel="stylesheet" type="text/css" href="css/normalize.css" media="all"><link rel="stylesheet" type="text/css" href="css/css.css" media="all">
 
     <title>Booki</title>
 </head>
@@ -14,29 +10,27 @@
 <body class="page">
     <header class="main-header">
         <nav class="main-nav">
-            <h1><a href="#">
+            <h1 class="tittle"><a href="#">
                     <picture>
-                        <source srcset="images\logo\Booki.png " media="(min-width: 992px)">
-                        <source srcset="images\logo\Booki@3x.png" media="(max-width:768px)">
-                        <img id="logo" src="images\logo\Booki.png" />
+                        <source srcset="images/logo/Booki.png"
+                        media="(min-width: 992px)" >
+                        <source srcset="images/logo/Booki@3x.png" 
+                        media="(max-width:768px)" >
+                        <img id="logo" src="images/logo/Booki.png" alt="Booki" />
                     </picture>
                 </a></h1>
             <ul class="main-nav-list">
-                <a href="#hébergements"><li id="hébergblue" class="nav">Hébergements</li></a>
-                <a href="#activités"><li id="héberggris" class="nav">Activités</li></a>
+                <li id="hébergblue" class="nav"><a href="#hébergements">Hébergements</a></li>
+                <li id="héberggris" class="nav"><a href="#activités">Activités</a></li>
             </ul>
         </nav>
         <div class="little-header">
             <h2 id="slogan">Trouvez votre hébergement pour des vacances de rêve</h2>
             <h3 class="soustitres">En plein centre ville ou en pleine nature</h3>
             <form class="formulaire" method="post" action="traitement.php">
-                <div class="searchbox">
-                    <label for="Search"><i class="fa-solid fa-location-dot"></i></label><input type="text" name="Search"
-                        id="Search" placeholder="Marseille, France" size="21" maxlength="50" /><button type="submit"
-                        value="Search">
-                        <p class="mobile"><i class="fa-solid fa-magnifying-glass "></i></p>
-                        <p class="desktop">Rechercher</p>
-                    </button>
+                <p class="searchbox">
+                    <label for="Search"><i class="fa-solid fa-location-dot"></i></label><input type="text" name="Search" id="Search" placeholder="Marseille, France" size="21" maxlength="50" /><button type="submit" value="search"><i class="fa-solid fa-magnifying-glass"></i><a>Rechercher</a></button>
+                </p>
             </form>
         </div>
 
