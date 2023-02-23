@@ -63,9 +63,6 @@ h2 {
 .nav:hover a {
 	color: #0065FC;
 }
-hr {
-	display: none;
-}
 .soustitres {
 	
 	font-weight: 400;
@@ -112,7 +109,7 @@ hr {
 	font-size: 1.3vw;
 	
 }
-.searchbox button a {
+.searchbox button b {
 	color: white;
 	font-weight: 600;
 }
@@ -724,7 +721,7 @@ border-top-right-radius: 1.2vw;
 	.fa-location-dot {
 		font-size: 5vw;
 	}
-	.searchbox button a{
+	.searchbox button b{
 		display: none;
 	}
 	.searchbox button .fa-solid{
