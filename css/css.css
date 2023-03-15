@@ -408,7 +408,7 @@ border-top-right-radius: 1.2vw;
 .main-footer li, .main-footer h3{
 	padding: 0.5vw;
 }
-@media all and (max-device-width: 992px) and (min-device-width: 768px) {
+@media all and (max-width: 992px) and (min-width: 768px) {
 	 * {
 		font-size: 1.5vw;	
 	}
@@ -608,7 +608,7 @@ border-top-right-radius: 1.2vw;
 }
 
 
-@media all and (max-device-width: 768px) {
+@media all and (max-width: 768px) {
 	*{
 		margin: 0;
 		font-size: 4.5vw;
