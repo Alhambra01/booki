@@ -3,14 +3,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 1.15vw;
-  
+  font-size: 1.15vw;  
 }
 body, html {
 	overflow-x: hidden;
 	width: 100vw;
 }
-
 a { 
 	text-decoration: none;
 	 color: black; 
@@ -18,7 +16,6 @@ a {
 h2 {
 	font-size: 1.7vw;
 }
-
 .main-header {
 	margin-left: 3.5vw;
 	margin-right: 3.5vw;
@@ -34,7 +31,6 @@ h2 {
 	margin-bottom: 1vw;
 	font-size: 1.5vw;
 }
-
 .main-nav  {
 	width: 95vw;
 	margin-right: 5vw;
@@ -71,7 +67,6 @@ h2 {
 .searchbox {
 	align-items: baseline;
 }
-
 .searchbox label {
 	background-color: #F2F2F2;
 	margin-right: 0;
@@ -79,9 +74,6 @@ h2 {
 	padding: 1.4vw;
 	padding-top: 1.3vw;
 	padding-bottom: 1.33vw;
-	
-	
-	
 }
 .searchbox input {
 	border: black;
@@ -98,13 +90,10 @@ h2 {
 .searchbox button {
 	padding: 1.3vw;
 	padding-top: 1.2vw;
-	
 	background-color: #0065FC;
-	
 	border: none;
 	border-radius: 0 1vw 1vw 0;
 	font-size: 1.3vw;
-	
 }
 .searchbox button strong {
 	color: white;
@@ -145,7 +134,6 @@ h2 {
 	padding-left: 1.2vw;
 	padding-right: 1.2vw;
 }
-
 .filters {
 	margin-top: 1.5vw;
 	font-size: 1.2vw;
@@ -157,18 +145,15 @@ h2 {
 	align-items: baseline;
 	white-space: nowrap;
 	overflow: visible;
-	
 }
 .filters:hover {
 	background-color: #DEEBFF;
 }
-
 #filter {
 	border: none;
 	margin-right: 2vw;
 	padding: 0;
 }
-
 .info .fa-solid {
 	padding: 0.75vw;
 	padding-top: 0.50vw;
@@ -192,7 +177,6 @@ h2 {
 	padding-top: 0;
 	padding-left: 2vw;
 	padding-right: 2vw;
-
 }
 .hébergements{
 	width: 60vw;
@@ -202,17 +186,14 @@ h2 {
 }
 .hébergements h2, .populaires h2 {
 	padding-top: 3vw;
-	
 }
 .table {
 	width: 56vw;
 	justify-content: space-between;
 	display: flex;
 	flex-wrap: wrap;
-	row-gap: 2.5vw;
-	
+	row-gap: 2.5vw;	
 }
-
 .fa-star {
 	font-size: 1vw;
 	color: lightgrey;
@@ -226,14 +207,11 @@ h2 {
   background-color: white; /*3*/
   box-shadow: 0px 2px 10px #c4c0c0; /*4*/
   border-radius: 1.3vw;
-  
-}
+ }
 .cards a { /*5*/
   color: #333; 
   text-decoration: none;
 }
-
-
 .card-image {
 	width: 17vw;
 	height: 9vw;
@@ -242,17 +220,12 @@ h2 {
 	border-top-left-radius: 1.2vw;
 	border-top-right-radius: 1.2vw;
 }
-
-
-.card-image img {
-	
-border-top-left-radius: 1.2vw;
-border-top-right-radius: 1.2vw;
+.card-image img {	
+	border-top-left-radius: 1.2vw;
+	border-top-right-radius: 1.2vw;
   width: 16.4vw;
-  height: 8.4vw;
-  
+  height: 8.4vw;  
 }
-
 .cards-body {
 	height: 6vw;
 	padding: 0.2vw;
@@ -281,8 +254,6 @@ border-top-right-radius: 1.2vw;
 	padding-top: 0.5vw;
 	padding-bottom: 2vw;
 }
-
-
 .populaires h2 .fa-solid {
 	font-size: 1.6vw;
 	position: relative;
@@ -295,9 +266,7 @@ border-top-right-radius: 1.2vw;
 	padding-top: 0;
 	display: flex;
 	flex-direction: column;
-	
 }
-
 .populaires .card {
 	background-color: white;
 	display: flex;
@@ -307,14 +276,12 @@ border-top-right-radius: 1.2vw;
 	margin-bottom: 2.5vw;
 	box-shadow: 0px 2px 7px #c4c0c0;	
 }
-
 .cards-image { 
   overflow: hidden;
   width: 10vw;
   height: 10vw;
   border-bottom-left-radius: 1vw;
   border-top-left-radius: 1vw;
-
 }
 .populaires img {
 	width: 10vw;
@@ -331,12 +298,9 @@ border-top-right-radius: 1.2vw;
 .annonce {
 	height: 7vw;
 }
-
-
 .card:hover .image img { /*6*/
   width: 175%;
 }
-
 .second-section {
 	margin-left: 3.5vw;
 	margin-right: 3.5vw;
@@ -344,15 +308,12 @@ border-top-right-radius: 1.2vw;
 	margin-bottom: 3vw;
 }
 .second-section h2 {
-
 	margin-bottom: 1.5vw;
 }
-
 .activités {
 	display: flex;
 	justify-content: space-between;
 }
-
 .post {
 	width: 20vw;
 	height: 30vw;
@@ -360,37 +321,29 @@ border-top-right-radius: 1.2vw;
 	background-color: white;
 	border-radius: 1vw;
 	box-shadow: 3px 3px 3px 3px #F2F2F2 ;
-
 	padding: 0px;
 }
 .post .card-img {
 	width: 20vw;
 	height: 27vw;
-	overflow: hidden;
-	
-	
+	overflow: hidden;	
 }
 .post .card-img img {
 	width: 20vw;
 	height: 27vw;
 	object-fit: cover;
 	border-top-left-radius: 1vw ;
-	border-top-right-radius: 1vw;
-	
+	border-top-right-radius: 1vw;	
 }
 .activités H3 {
 	text-align: center;
 	justify-content: center;
 	padding: 1vw;
 }
-
-
-
 .main-footer {
 	width: 100vw;
 	background-color: #F2F2F2;
-	padding: 2vw;
-	
+	padding: 2vw;	
 }
 .list {
 	margin-left: 3vw;
@@ -434,37 +387,30 @@ border-top-right-radius: 1.2vw;
 		color: black;
 	}
 	.little-header h2, .soustitres, .info {
-		font-size: 2vw;
-		
+		font-size: 2vw;	
 	}
 	.searchbox {
 		margin-top: 2vw;
 		margin-bottom: 1vw;
 	}
 	.searchbox label{
-		width: 15vw;
 		border-radius: 1.5vw 0 0 1.5vw;
 		padding-top: 1.7vw;
 	}
 	.fa-location-dot {
-		font-size: 2.5vw;
-		
+		font-size: 2.5vw;	
 	}
-
 	.searchbox label {
 		padding-left: 2vw;
 		padding-right: 2vw;	
 		padding-top: 1.8vw;	
 		padding-bottom: 1.45vw;
 	}
-	
-	
 	.searchbox input {
 		font-size: 2vw;
 	}
 	.searchbox button {
 		border-radius: 0 1.5vw 1.5vw 0;
-
 	}
 	.desktop {
 		font-size: 2.1vw;
@@ -476,8 +422,7 @@ border-top-right-radius: 1.2vw;
 	}
 	.ligne {
 		width: 100vw;
-		justify-content: space-around;
-		
+		justify-content: space-around;	
 	}
 	.filters {
 		font-size: 1.7vw;
@@ -496,8 +441,7 @@ border-top-right-radius: 1.2vw;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0;
-		padding-bottom: 0;
-				
+		padding-bottom: 0;			
 	}
 	.hébergements, .populaires{
 		width: 88vw;
@@ -507,16 +451,13 @@ border-top-right-radius: 1.2vw;
 		padding-right: 4vw;
 	}
 	.table, .pop {
-		width: 80vw;
-		
+		width: 80vw;	
 	}
-	
 	.hébergements .cards {
 		width: 24.5vw;
 		height: 20vw;
 		border-radius: 2vw;
 	}
-
 	.hébergements .card-image {
 		width: 24.5vw;
 		height: 13.2vw;
@@ -537,11 +478,9 @@ border-top-right-radius: 1.2vw;
 	.first-section h4, .cards p {
 		padding-bottom: 0.5vw;
 	}
-	
 	.populaires {
 		margin: 0;
-		padding-bottom: 2vw;
-		
+		padding-bottom: 2vw;	
 	}
 	.populaires h2 {
 		padding-left: 1vw ;
@@ -578,12 +517,10 @@ border-top-right-radius: 1.2vw;
 	}
 	.second-section {
 		margin-top: 3vw;
-		padding-top: 0;
-		
+		padding-top: 0;	
 	}
 	.activités {
-		width: 88vw;
-		
+		width: 88vw;	
 	}
 	.post {
 		height: 25vw;
@@ -595,9 +532,7 @@ border-top-right-radius: 1.2vw;
 		width: 18vw;
 	}
 	.post .card-bod {
-		text-align: center;
-		vertical-align: middle;
-		
+		text-align: center;	
 	}
 	#vieuxport h3, #fort h3 {
 		padding-top: 1.5vw;
@@ -606,8 +541,6 @@ border-top-right-radius: 1.2vw;
 		margin-top:5vw;
 	}
 }
-
-
 @media all and (max-width: 768px) {
 	*{
 		margin: 0;
@@ -618,15 +551,12 @@ border-top-right-radius: 1.2vw;
 		font-size: 7vw;
 		margin: auto;
 	}
-	
 	.main-header h2{
 		font-size: 6vw;
 	}
-	
 	.soustitres {
 		font-size: 4vw;
 	}
-
 	.main-nav {
 		margin: 0;
 		padding: 0;
@@ -639,7 +569,6 @@ border-top-right-radius: 1.2vw;
 		width: 100vw;
 		justify-content: center;
 		font-size: xX-large;
-
 	}
 	#logo {
 		display: block;
@@ -648,8 +577,7 @@ border-top-right-radius: 1.2vw;
 		margin-right: auto;
 		text-align: center;
 		width: 17vw;
-		height: 5.5vw;
-		
+		height: 5.5vw;	
 	}
 	.nav {
 		width: 50vw;
@@ -658,15 +586,13 @@ border-top-right-radius: 1.2vw;
 		border-bottom: 1vw solid #F2F2F2;		
 		text-align: center;
 		margin-left: auto;
-		margin-right: auto;
-		
+		margin-right: auto;	
 	}
 	.nav:hover {
 		border-bottom: 1vw solid #0065FC;
 		border-top: hidden;
 		padding-top: 7vw;
 	}
-
 	.nav:hover a {
 		color: #0065FC;
 	}
@@ -678,9 +604,7 @@ border-top-right-radius: 1.2vw;
 		margin-left: 5vw;
 		margin-right: 5vw;
 	}
-	
 	.formulaire {
-		
 		margin-top: 5vw;
 		margin-bottom: 3vw;
 		margin-right: 0;
@@ -688,8 +612,7 @@ border-top-right-radius: 1.2vw;
 	.fa-location-dot {
 		font-size: 5vw;
 		
-			}
-
+	}
 	.searchbox input {
 		width: 63vw;
 		font-size: 5vw;
@@ -701,19 +624,16 @@ border-top-right-radius: 1.2vw;
 		border-bottom: 0.3VW solid #F2F2F2;
 	}
 	.searchbox button {
-		
 		border-radius: 0 4vw 4vw 0;
 		padding: 4.2vw;
 		padding-left: 4.5vw;
-		padding-right: 4.5vw;
-		
+		padding-right: 4.5vw;	
 	}
 	.searchbox label {
 		border-radius: 4vw 0 0 4vw;
 		padding: 4vw;
 		padding-left: 4.5vw;
-		padding-right: 4.5vw;
-		
+		padding-right: 4.5vw;	
 	}
 	.fa-location-dot {
 		font-size: 5vw;
@@ -733,9 +653,7 @@ border-top-right-radius: 1.2vw;
 		display: block;
 		margin-left: 5vw;
 		margin-right: 5vw;
-
 	}
-	
 	.ligne {
 		display: flex;
 		flex-flow: wrap row;
@@ -743,7 +661,6 @@ border-top-right-radius: 1.2vw;
 		margin-top: 2vw;
 		margin-bottom: 7vw;
 		flex-wrap: wrap;
-
 	}
 	#filter {
 		margin-top: 8vw;
@@ -751,7 +668,6 @@ border-top-right-radius: 1.2vw;
 		margin-bottom: 0;
 		padding-bottom: 0;
 	}
-	
 	.filters {
 		align-items: center;
 		font-size: 3vw;
@@ -763,9 +679,7 @@ border-top-right-radius: 1.2vw;
 		margin-left: 0vw;
 		margin-right: 0vw;
 	}
-
 	.filters .fa-solid{
-
 		font-size: 6vw;
 		padding: 1vw;
 		padding-left: 1.5vw;
@@ -790,37 +704,29 @@ border-top-right-radius: 1.2vw;
 		border: 0.3vw solid lightgrey;
 		margin-right: 3vw;
 	}
-	
-	
 	.first-section {
 		margin-top: 7vw;
 		margin-left: 0;
 		margin-right: 0;
 		display: flex;	
 		flex-direction: column-reverse;
-				}
-
+	}
 	.hébergements, .populaires {
 		width: 100vw;
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 7vw;
 		padding-left: 5vw;
-		padding-right: 5vw;
-		
+		padding-right: 5vw;	
 	}
 	.hébergements {
-		background-color: white;
-		
-		
+		background-color: white;	
 	}
 	.table {
 		width: 90vw;
 		display: flex;
 		flex-direction: column;	
-		align-self: center;
-		
-		
+		align-self: center;	
 	}
 	.hébergements h2 {
 		font-size: 6vw;
@@ -837,21 +743,17 @@ border-top-right-radius: 1.2vw;
 		box-shadow: 0px 2px 7px #c4c0c0; /*4*/
 	}
 	.card-image {
-		
 		width: 90vw;
 		height: 36vw;
-		padding: 1.5vw;
-		
+		padding: 1.5vw;	
 	}
 	.card-image img {
 		width: 87vw;
 		height: 33vw;
-		border-radius: 5vw 5vw 0 0;
-		
+		border-radius: 5vw 5vw 0 0;	
 	}
 	.cards-body {
 		padding-left: 4vw;
-
 	}
 	.fa-star {
 		font-size: 4vw;
@@ -886,14 +788,11 @@ border-top-right-radius: 1.2vw;
 		height: 38vw;
 	}
 	.populaires .cards-body {
-		
 		width: 50vw;
 		padding: 3vw;
 		padding-left: 0;
-		padding-bottom: 0;
-			
+		padding-bottom: 0;		
 	}
-	
 	.populaires .cards-body h4, .populaires p {
 		font-size: 4vw;
 		padding-left: 3vw;
@@ -901,43 +800,32 @@ border-top-right-radius: 1.2vw;
 	.annonce {
 		height: 30vw;
 	}
-	
 	.activités {
-		display: inline-block;
-		
+		display: inline-block;	
 	}
 	.second-section {
 		margin-left: 5vw;
-		margin-right: 5vw;
-		
+		margin-right: 5vw;	
 	}
 	.second-section h2{
 		font-size: 6vw;
 		margin-bottom: 5vw;
 	}
-	
-	
 	.post {
 		width: 90vw;
 		height: 55vw;
 		box-shadow: 0px 2px 10px #999; /*4*/
 		border-radius: 5vw;
-		
 		margin-bottom: 7vw;
 	}
 	.post .card-img, .post .card-img img {
 		width: 90vw;
-		height: 40vw ;
-		
+		height: 40vw ;	
 	}
-	
 	.card-bod {
 		height: 15vw;
 		padding: 3vw;
-	}
-	
-	
-	
+	}	
 	.list {
 		padding: 3vw;
 		padding-bottom: 7vw;
@@ -951,10 +839,4 @@ border-top-right-radius: 1.2vw;
 		padding-top: 7vw;
 	padding-bottom: 7vw;
 	}	
-
-
 }
-
-
-
-
