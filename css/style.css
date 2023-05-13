@@ -104,6 +104,7 @@ h2 {
 	display: none;
 }
 .box {
+	width: 100vw;
 	display: flex;
 	align-items: baseline;
 	margin-bottom: 1vw;
@@ -232,8 +233,12 @@ h2 {
 	padding-top: 0;
 	padding-left: 1vw;
 }
-.cards-body h4, .cards-body p {
+.cards-body p {
 	padding-bottom: 0.3vw;
+}
+.hébergements .cards-body h3 {
+  font-size: 1.15vw;
+  padding: 0;
 }
 .populaires {
 	width: 30vw;
@@ -244,9 +249,6 @@ h2 {
 }
 .populaires .cards-body {
 	padding: 1vw;
-}
-.pop h4 {
-	padding-bottom: 0.3vw;
 }
 .hébergements h3 {
 	font-size: 1.5vw;
@@ -335,8 +337,7 @@ h2 {
 	border-top-left-radius: 1vw ;
 	border-top-right-radius: 1vw;	
 }
-.activités H3 {
-	text-align: center;
+.activités h3 {
 	justify-content: center;
 	padding: 1vw;
 }
@@ -361,7 +362,7 @@ h2 {
 .main-footer li, .main-footer h3{
 	padding: 0.5vw;
 }
-@media all and (max-width: 992px) and (min-width: 768px) {
+@media all and (max-width: 1024px) and (min-width: 768px) {
 	 * {
 		font-size: 1.5vw;	
 	}
@@ -467,7 +468,6 @@ h2 {
 	.hébergements img {
 		width: 23.5vw;
 		height: 12vw;
-		
 		border-radius: 2vw 2vw 0 0;
 	}
 	.hébergements h3 {
@@ -475,8 +475,11 @@ h2 {
 		padding-top: 1.5vw;
 		padding-bottom: 4vw;
 	}
-	.first-section h4, .cards p {
+	.first-section h3, .cards p {
 		padding-bottom: 0.5vw;
+	}
+	.hébergements .cards-body h3 {
+		font-size: 1.5vw;
 	}
 	.populaires {
 		margin: 0;
@@ -758,8 +761,11 @@ h2 {
 	.fa-star {
 		font-size: 4vw;
 	}
-	.first-section h4, .first-section p {
+	.first-section p {
 		margin-bottom: 1vw;
+	}
+	.hébergements .cards-body h3 {
+		font-size: 5vw;
 	}
 	.populaires h2 {
 		font-size: 6vw;
@@ -793,7 +799,7 @@ h2 {
 		padding-left: 0;
 		padding-bottom: 0;		
 	}
-	.populaires .cards-body h4, .populaires p {
+	.populaires .cards-body h3, .populaires p {
 		font-size: 4vw;
 		padding-left: 3vw;
 	}
